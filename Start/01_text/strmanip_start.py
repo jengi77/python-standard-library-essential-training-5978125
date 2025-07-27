@@ -6,6 +6,7 @@ test_string1 = "The quick brown fox jumps over the lazy dog on the 1st of Decemb
 
 
 # TODO: Use the split and join functions
+letters = ["a", "b", "c", "d", "e"]
 
 
 # TODO: use justification functions to align strings
