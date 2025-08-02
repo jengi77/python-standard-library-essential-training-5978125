@@ -16,7 +16,7 @@ class Product():
         return self.price - (self.price * self.discount)
 
 
-prodList = [
+prodlist = [
     Product("Doohickey", 40, 10, 0.15),
     Product("Widget", 50, 10, 0.05),
     Product("Doohickey", 40, 8, 0.15),
@@ -24,6 +24,6 @@ prodList = [
     Product("Gadget", 65, 7, 0.20)
 ]
 
-print(sorted(prodList, key=lambda p: p.price))
+print(sorted(prodlist, key=lambda p: p.price))
 
 # TODO: sort by two different keys, taking advantage of stability

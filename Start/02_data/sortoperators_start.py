@@ -12,11 +12,11 @@ class Product():
     def __repr__(self):
         return repr((self.name, self.price, self.weight))
 
-    def discountPrice(self):
+    def discount_price(self):
         return self.price - (self.price * self.discount)
 
 
-prodList = [
+prodlist = [
     Product("Widget A", 50, 10, 0.05),
     Product("Widget B", 40, 8, 0.15),
     Product("Widget C", 35, 12, 0.0),
@@ -33,6 +33,6 @@ print("Using the attrgetter method:")
 
 # print("Using methodcaller to invoke a method:")
 
-# TODO: Use itemgetter to retrieve an index
+# TODO: Use itemgetter to retrieve an index from a tuple or list
 inventory = [("Widget A", 5), ("Widget B", 2), ("Widget C", 4),
              ("Widget D", 7), ("Widget E", 4)]

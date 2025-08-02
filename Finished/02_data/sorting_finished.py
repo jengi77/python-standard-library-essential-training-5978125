@@ -1,12 +1,18 @@
 # using the built-in sorted function to sort data content
 
-testScores = [82, 67, 94, 73, 79, 86, 58, 91, 89, 71, 88, 77, 84]
+test_scores = [82, 67, 94, 73, 79, 86, 58, 91, 89, 71, 88, 77, 84]
+test_names = ["Bob", "Doug", "Jane", "Sue", "Ted", "Craig", "Melanie"]
 
 # perform a simple sort using sorted()
-sortedScores = sorted(testScores)
-print(sortedScores)
+sorted_scores = sorted(test_scores)
+print(sorted_scores)
 
 
 # explicitly declare a sort order - ascending and descending
-sortedScores = sorted(testScores, reverse=True)
-print(sortedScores)
+sorted_scores = sorted(test_scores, reverse=True)
+print(sorted_scores)
+
+
+# sorting works on strings, too
+sorted_names = sorted(test_names)
+print(sorted_names)

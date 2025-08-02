@@ -2,24 +2,23 @@
 
 
 class Product():
-    def __init__(self, name, price, weight, discount):
+    def __init__(self, name, price, discount):
         self.name = name
         self.price = price
-        self.weight = weight
         self.discount = discount
 
     def __repr__(self):
-        return repr((self.name, self.price, self.weight))
+        return repr((self.name, self.price))
 
-    def discountPrice(self):
+    def discount_price(self):
         return self.price - (self.price * self.discount)
 
 
-prodList = [
-    Product("Widget", 50, 10, 0.05),
-    Product("Doohickey", 40, 8, 0.15),
-    Product("Thingamabob", 35, 12, 0.0),
-    Product("Gadget", 65, 7, 0.20)
+prodlist = [
+    Product("Widget", 50, 0.05),
+    Product("Doohickey", 40, 0.15),
+    Product("Thingamabob", 35, 0.0),
+    Product("Gadget", 65, 0.20)
 ]
 
 # TODO: use the key parameter to select a field to sort on
