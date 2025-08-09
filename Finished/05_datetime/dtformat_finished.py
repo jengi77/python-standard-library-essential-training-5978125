@@ -1,5 +1,12 @@
 # Formatting date and time information
+import time
 import datetime
+
+
+# ctime() creates a readable string from a datetime object
+current_time = time.time()
+formatted_time = time.ctime(current_time)
+print(formatted_time)
 
 # create a datetime for today
 now = datetime.datetime.now()

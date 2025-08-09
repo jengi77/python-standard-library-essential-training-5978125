@@ -6,6 +6,7 @@ import secrets
 
 # TODO: the urandom() function in the OS module produces random numbers that
 # are cryptographically safe to use for sensitive purposes
+# Your code usually won't need to call this function directly
 
 
 # TODO: secrets.choice is the same as random.choice but more secure

@@ -22,7 +22,7 @@ print(statistics.mode(sample_data2))
 
 
 # Read data from a CSV file and calculate statistics
-def readData():
+def read_data():
     with open("StockQuotes.csv") as dataFile:
         data = array.array('f', [])
 
@@ -41,9 +41,9 @@ def readData():
         return data
 
 
-def calcStats():
+def calc_stats():
     # read the data from the CSV file
-    data = readData()
+    data = read_data()
 
     data_mean = round(statistics.mean(data), 2)
     data_med = round(statistics.median(data), 2)
@@ -56,4 +56,4 @@ def calcStats():
     print("Variance: ", data_var)
 
 
-calcStats()
+calc_stats()

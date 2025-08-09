@@ -4,14 +4,17 @@ import os
 import secrets
 
 
-# the urandom() function in the OS module produces random numbers that
-# are cryptographically safe to use for sensitive purposes
+# The urandom() function in the OS module produces random numbers that
+# are cryptographically safe to use for sensitive purposes.
+# Your code usually won't need to call this function directly
 result = os.urandom(8)
 print([hex(b) for b in result])
 
 
 # secrets.choice is the same as random.choice but more secure
 moves = ["rock", "paper", "scissors"]
+print(secrets.choice(moves))
+print(secrets.choice(moves))
 print(secrets.choice(moves))
 
 

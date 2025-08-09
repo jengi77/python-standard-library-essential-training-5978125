@@ -1,6 +1,10 @@
 # Formatting date and time information
 import datetime
 
+
+# ctime() creates a readable string from a datetime object
+
+
 # create a datetime for today
 now = datetime.datetime.now()
 

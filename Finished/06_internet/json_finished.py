@@ -25,5 +25,10 @@ objdata = {
     ]
 }
 
-with open("jsonoutput.json", "w") as fp:
-    json.dump(objdata, fp, indent=4)
+# use the dumps() function to create a JSON string
+jsondata = json.dumps(objdata, indent=4)
+print(jsondata)
+
+# use the dump() function to write JSON data to a file
+# with open("jsonoutput.json", "w") as fp:
+#     json.dump(objdata, fp, indent=4)
