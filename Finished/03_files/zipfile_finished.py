@@ -27,5 +27,5 @@ print(zfile.read("file3.txt"))
 
 
 # Extract ZIP file contents
-# zfile.extract("file2.txt")
-# zfile.extractall()
+#zfile.extract("file2.txt",path="extracted")
+#zfile.extractall("extracted")
