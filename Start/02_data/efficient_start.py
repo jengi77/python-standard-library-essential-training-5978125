@@ -4,7 +4,7 @@
 from array import array
 
 # TODO: Create an array of integer numbers
-arr1 = array('i', [2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+arr1 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 # TODO: Add additional items to the array
 
