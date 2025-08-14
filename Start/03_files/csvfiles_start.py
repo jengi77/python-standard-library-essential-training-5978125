@@ -6,21 +6,21 @@ import csv
 
 
 # TODO: Open a CSV file and read each row of data
-def readerSample():
+def reader_sample():
     pass
 
 
 # TODO: Use the CSV module Sniffer to see what dialect of CSV this is
-def useSniffer():
+def use_sniffer():
     pass
 
 
 # TODO: Write data to a CSV file
-def writerSample():
+def writer_sample():
     pass
 
 
 # Exercise the samples
-# readerSample()
-# writerSample()
-# useSniffer()
+# reader_sample()
+# writer_sample()
+# use_sniffer()

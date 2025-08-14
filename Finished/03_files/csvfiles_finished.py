@@ -7,7 +7,7 @@ print(csv.list_dialects())
 
 
 # Open a CSV file and read each row of data
-def readerSample():
+def reader_sample():
     with open("StockQuotes.csv") as dataFile:
         reader = csv.reader(dataFile)
         for row in reader:
@@ -15,7 +15,7 @@ def readerSample():
 
 
 # Use the CSV module Sniffer to see what dialect of CSV this is
-def useSniffer():
+def use_sniffer():
     with open("StockQuotes.csv") as csvfile:
         dialect = csv.Sniffer().sniff(csvfile.read(1024))
         csvfile.seek(0)
@@ -28,7 +28,7 @@ def useSniffer():
 
 
 # Write data to a CSV file
-def writerSample():
+def writer_sample():
     with open("SampleData.csv", mode="w") as csvfile:
         # create a csv writer
         csvWriter = csv.writer(csvfile)
@@ -43,6 +43,6 @@ def writerSample():
 
 
 # Exercise the samples
-# readerSample()
-# writerSample()
-# useSniffer()
+# reader_sample()
+# writer_sample()
+# use_sniffer()

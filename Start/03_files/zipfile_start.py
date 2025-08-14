@@ -15,8 +15,6 @@ import zipfile
 
 
 # TODO: Extract ZIP file contents
-# zfile.extract("file2.txt")
-# zfile.extractall()
 
 
 # TODO: Ensure that the file is closed
