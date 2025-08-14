@@ -17,5 +17,6 @@
     "terminal.integrated.fontSize": 18,
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.fontAliasing": "antialiased",
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "python.terminal.executeInFileDir": true
 }
