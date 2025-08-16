@@ -1,6 +1,7 @@
 # Create a temporary password using Python
 import secrets
 import string
+import random
 
 
 # Function to return a temporary password given a length
@@ -13,16 +14,16 @@ def generate_temp_pass(num_chars=8):
 # Function to return a temporary password and enforce 1 number and 1 uppercase
 def generate_better_pass(num_chars=8):
     potential_chars = string.ascii_letters + string.digits + "+=?/!@#$%*"
-    while True:
-        result = ''.join(secrets.choice(potential_chars)
-                         for i in range(num_chars))
 
-        # if the password has at least one number and one uppercase char we can stop
-        if (any(c.isupper() for c in result)
-                and any(c.isdigit() for c in result)):
-            break
+    passwd = ''.join(secrets.choice(potential_chars) for i in range(num_chars-2))
+    passwd += secrets.choice(string.digits)
+    passwd += secrets.choice(string.ascii_uppercase)
 
-    return result
+    result = random.sample(passwd, k=len(passwd))
+    random.shuffle(result)
+    passwd = ''.join(result)
+
+    return passwd
 
 
 # create a temporary password
