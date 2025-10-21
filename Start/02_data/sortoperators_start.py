@@ -41,3 +41,4 @@ inventory = [("Widget A", 5), ("Widget B", 2), ("Widget C", 4),
              ("Widget D", 7), ("Widget E", 4)]
 
 print(sorted(inventory, key=itemgetter(1)))
+print(sorted(inventory, key=lambda x: x[1]))
