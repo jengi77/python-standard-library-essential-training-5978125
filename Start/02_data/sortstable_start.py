@@ -24,6 +24,10 @@ prodlist = [
     Product("Gadget", 65, 7, 0.20)
 ]
 
+# Reihenfolge der original Liste wird beibehalten Doohickey mit Weight 10 kommt vor dem mit Weight 8
 print(sorted(prodlist, key=lambda p: p.price))
 
 # TODO: sort by two different keys, taking advantage of stability
+# Zuerst wird nach Wight sortiert und danach nach Price in absteigender Reihenfolge
+result = sorted(prodlist, key=lambda p: p.weight)
+print(sorted(result, key=lambda p: p.price, reverse=True))

@@ -4,21 +4,36 @@
 from array import array
 
 # TODO: Create an array of integer numbers
-arr1 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+arr1 = array('i', [2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+
+print(arr1.typecode)
+print("Array 1 item size: ", arr1.itemsize)
 
 # TODO: Add additional items to the array
-
+arr1.insert(0, 9)
+arr1.append(22)
+arr1.extend([1, 3, 5])
+print(arr1)
 
 # TODO: iterate over the array content like any other list
-
+for i, elem in enumerate(arr1):
+  arr1[i] = elem *2
+print(arr1)
 
 # TODO: Try to add a non-integer number to the array
-
+# Das folgende wird nun nicht funktionieren
+# arr1.insert(0, 9.5)
 
 # TODO: Create an array to hold bytes instead of ints
 arr2 = array('B', [18, 102, 182, 56, 89, 5, 254, 32, 64, 50])
+print(arr2.typecode)
+print("Array 2 item size: ", arr2.itemsize)
 
 # TODO: try to add an item that's out of range
-
+# OverflowError
+# arr2.append(300)
 
 # TODO: Convert an array to a list
+print(type(list(arr2)))
+print(list(arr2))
+print(arr2.tolist())
